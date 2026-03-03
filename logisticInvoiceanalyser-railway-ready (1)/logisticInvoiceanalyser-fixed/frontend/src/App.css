@@ -1,0 +1,5 @@
+/* Minimal global overrides */
+.App {
+  min-height: 100vh;
+  background: #09090b;
+}

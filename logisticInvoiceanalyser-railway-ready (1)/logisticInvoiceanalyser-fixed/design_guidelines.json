@@ -1,0 +1,153 @@
+{
+  "design_system": {
+    "identity": "E1: The Anti-AI Designer",
+    "core_philosophy": "Tactical Finance Command Center. Precision, Control, Truth. No decorative fluff.",
+    "theme_strategy": "Midnight Tactical (Dark Mode Only)",
+    "typography": {
+      "headings": {
+        "font_family": "Space Grotesk, sans-serif",
+        "weights": ["600", "700"],
+        "letter_spacing": "-0.02em",
+        "usage": "Use for all page titles, card headers, and major metrics."
+      },
+      "body": {
+        "font_family": "Manrope, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Use for all data tables, labels, and general text. Excellent for numbers."
+      },
+      "mono": {
+        "font_family": "JetBrains Mono, monospace",
+        "usage": "Use for AWBs, Invoice Numbers, and Code snippets."
+      }
+    },
+    "colors": {
+      "background": {
+        "default": "#09090b",
+        "surface": "#18181b",
+        "surface_hover": "#27272a",
+        "overlay": "rgba(9, 9, 11, 0.8)"
+      },
+      "border": {
+        "default": "#27272a",
+        "active": "#52525b"
+      },
+      "primary": {
+        "default": "#3b82f6",
+        "hover": "#2563eb",
+        "foreground": "#ffffff"
+      },
+      "status": {
+        "genuine_error": "#ef4444",
+        "data_dependent": "#eab308",
+        "operationally_agreed": "#22c55e",
+        "info": "#0ea5e9"
+      },
+      "text": {
+        "primary": "#f4f4f5",
+        "secondary": "#a1a1aa",
+        "muted": "#52525b"
+      }
+    },
+    "spacing": {
+      "base_scale": "4px",
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "element_gap": "gap-4 md:gap-6",
+      "section_gap": "gap-8 md:gap-12"
+    },
+    "radii": {
+      "card": "rounded-lg",
+      "button": "rounded-md",
+      "input": "rounded-md"
+    },
+    "shadows": {
+      "card": "0 1px 2px 0 rgba(0, 0, 0, 0.5)",
+      "glow": "0 0 15px rgba(59, 130, 246, 0.3)"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "Glass-Tactical",
+      "classes": "bg-zinc-900/50 border border-zinc-800 backdrop-blur-md hover:border-zinc-700 transition-colors duration-200",
+      "interaction": "Add a subtle 'Tracing Beam' effect on hover for actionable cards."
+    },
+    "buttons": {
+      "primary": "bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-[0_0_10px_rgba(37,99,235,0.3)] hover:shadow-[0_0_20px_rgba(37,99,235,0.5)] transition-all",
+      "secondary": "bg-zinc-800 hover:bg-zinc-700 text-zinc-100 border border-zinc-700",
+      "ghost": "hover:bg-zinc-800/50 text-zinc-400 hover:text-white"
+    },
+    "tables": {
+      "style": "Grid Borders",
+      "header_classes": "bg-zinc-900/80 text-zinc-400 font-medium text-xs uppercase tracking-wider border-b border-zinc-800 sticky top-0 backdrop-blur-sm z-10",
+      "row_classes": "hover:bg-zinc-800/30 transition-colors border-b border-zinc-800/50 last:border-0",
+      "cell_classes": "py-3 px-4 text-sm tabular-nums"
+    },
+    "inputs": {
+      "style": "Tactical Field",
+      "classes": "bg-zinc-950 border border-zinc-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 placeholder:text-zinc-600"
+    },
+    "badges": {
+      "error": "bg-red-500/10 text-red-500 border border-red-500/20",
+      "warning": "bg-yellow-500/10 text-yellow-500 border border-yellow-500/20",
+      "success": "bg-green-500/10 text-green-500 border border-green-500/20",
+      "neutral": "bg-zinc-800 text-zinc-400 border border-zinc-700"
+    }
+  },
+  "layout_strategies": {
+    "dashboard_grid": {
+      "type": "Bento Grid (Mode A)",
+      "structure": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "hero_span": "col-span-1 md:col-span-12 lg:col-span-8 row-span-2",
+      "stat_span": "col-span-1 md:col-span-6 lg:col-span-4",
+      "list_span": "col-span-1 md:col-span-12 lg:col-span-4 row-span-2"
+    },
+    "data_view": {
+      "type": "High Density (Mode B)",
+      "structure": "flex flex-col h-full gap-4",
+      "toolbar": "flex justify-between items-center p-4 bg-zinc-900/50 border border-zinc-800 rounded-lg",
+      "table_wrapper": "border border-zinc-800 rounded-lg overflow-hidden bg-zinc-900/20"
+    }
+  },
+  "visual_assets": {
+    "provider_logos": {
+      "note": "Use these images as 'Provider Avatars' in the absence of official vector logos.",
+      "bluedart": "https://images.unsplash.com/photo-1643221169582-49bd2e666ebb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxkZWxpdmVyeSUyMHRydWNrJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MjM0ODEyOHww&ixlib=rb-4.1.0&q=85",
+      "delhivery": "https://images.unsplash.com/photo-1523362612182-052e9ff2c8da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxkZWxpdmVyeSUyMHRydWNrJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MjM0ODEyOHww&ixlib=rb-4.1.0&q=85",
+      "ecom_express": "https://images.pexels.com/photos/16363848/pexels-photo-16363848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "shadowfax": "https://images.pexels.com/photos/31049388/pexels-photo-31049388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "backgrounds": {
+      "login_hero": "https://images.unsplash.com/photo-1601999611433-070d9afa0cd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxsb2dpc3RpY3MlMjBjb250YWluZXIlMjBzaGlwJTIwbmlnaHQlMjBhZXJpYWx8ZW58MHx8fHwxNzcyMzQ4MTE1fDA&ixlib=rb-4.1.0&q=85",
+      "data_abstract": "https://images.unsplash.com/photo-1762279389006-43963a0cee55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBkYXRhJTIwZmxvdyUyMGJsdWUlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzIzNDgxMTV8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "placeholders": {
+      "manual_upload": "https://images.unsplash.com/photo-1769355104335-acef3aa4c9b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwzfHxjYXJkYm9hcmQlMjBib3hlcyUyMHdhcmVob3VzZXxlbnwwfHx8fDE3NzIzNDgxMjh8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "universal_guidelines": {
+    "general": [
+      "Avoid 'AI Slop' - no generic centered layouts or unstyled gradients.",
+      "Use depth (z-index, shadows, borders) to create hierarchy.",
+      "Transitions MUST be specific (e.g., transition-colors), NEVER 'transition-all'.",
+      "NEVER use emojis as icons. Use Lucide React icons.",
+      "Ensure all text meets WCAG AA contrast ratios (4.5:1)."
+    ],
+    "testing": [
+      "All interactive elements MUST have a data-testid attribute.",
+      "Format: kebab-case, role-based (e.g., 'submit-invoice-btn')."
+    ],
+    "components": [
+      "Reuse /app/frontend/src/components/ui/ components.",
+      "Customize Shadcn components to match the 'Midnight Tactical' theme.",
+      "Use 'sonner' for toasts.",
+      "Use 'recharts' for data visualization."
+    ]
+  },
+  "instructions_to_main_agent": {
+    "step_1": "Install necessary fonts: Space Grotesk and Manrope.",
+    "step_2": "Update tailwind.config.js to extend the color palette with the 'Midnight Tactical' colors.",
+    "step_3": "Create a 'Layout' component that enforces the dark background and sidebar structure.",
+    "step_4": "Build the Dashboard using the Bento Grid strategy.",
+    "step_5": "Implement the Audit Engine view with a focus on progress visualization.",
+    "step_6": "Ensure the 'Audit Results' table handles large datasets efficiently (virtualization if needed, or pagination)."
+  }
+}

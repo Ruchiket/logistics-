@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #09090b;
+  color: #f4f4f5;
+}
+
+code, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 3.5%;
+    --foreground: 240 5% 96%;
+    --card: 240 6% 10%;
+    --card-foreground: 240 5% 96%;
+    --popover: 240 6% 10%;
+    --popover-foreground: 240 5% 96%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 240 5% 96%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 240 4% 16%;
+    --accent-foreground: 240 5% 96%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 217 91% 60%;
+    --chart-1: 217 91% 60%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 47 96% 53%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 199 89% 48%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* Table number alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
