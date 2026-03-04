@@ -21,10 +21,13 @@ from audit_engine import run_full_audit
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
+import ssl
 mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url, tlsAllowInvalidCertificates=True)
+ssl_context = ssl.create_default_context()
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
+client = AsyncIOMotorClient(mongo_url, tls=True, ssl_context=ssl_context)
 db = client[os.environ['DB_NAME']]
-
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
