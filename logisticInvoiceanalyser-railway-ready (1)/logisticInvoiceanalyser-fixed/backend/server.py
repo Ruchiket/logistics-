@@ -753,7 +753,7 @@ async def root():
 
 
 # Include router
-app.include_router(api_router)
+app.include_router(api_router, prefix="/api")
 
 app.add_middleware(
     CORSMiddleware,
