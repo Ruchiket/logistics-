@@ -748,7 +748,8 @@ async def dashboard_stats():
 async def root():
     return {"message": "Bill Audit System API"}
 
-
+app = FastAPI()
+api_router = APIRouter()
 # Include router
 app.include_router(api_router)
 
