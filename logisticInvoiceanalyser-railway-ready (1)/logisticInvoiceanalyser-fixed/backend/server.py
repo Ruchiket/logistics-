@@ -25,6 +25,9 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url, tlsAllowInvalidCertificates=True)
 db = client[os.environ['DB_NAME']]
 
+app = FastAPI()
+api_router = APIRouter()
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -748,8 +751,7 @@ async def dashboard_stats():
 async def root():
     return {"message": "Bill Audit System API"}
 
-app = FastAPI()
-api_router = APIRouter()
+
 # Include router
 app.include_router(api_router)
 
